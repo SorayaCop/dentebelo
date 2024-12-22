@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DentiBelo - Nós cuidamos da sua saúde bucal</title>
+
+  <!-- favicon-->
+  <link rel="shortcut icon" href="./favicon-dente-belo.svg" type="image/svg+xml">
+
+  <!-- custom css link-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <style>
+    .fixed-icon {
+      position: fixed;
+      bottom: 10px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(-135deg, #141c44, #8e3988);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgb(242, 242, 242);
+      font-size: 24px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .fixed-icon:hover {
+      background: linear-gradient(-135deg, #8e3988, #141c44);
+    }
+  </style>
+</head>
+
+<body id="top">
+
+  <!-- #HEADER-->
+  <header class="header">
+
+    <div class="header-top">
+      <div class="container">
+
+        <ul class="contact-list">
+          <li class="contact-item">
+            <ion-icon name="mail-outline"></ion-icon>
+            <a href="mailto:info@example.com" class="contact-link">contato@dentebelo.com.br</a>
+          </li>
+          <li class="contact-item">
+            <ion-icon name="call-outline"></ion-icon>
+
+            <a href="tel:+917052101786" class="contact-link">(12) 3456 - 7890</a>
+          </li>
+        </ul>
+
+        <ul class="social-list">
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="header-bottom" data-header>
+      <div class="container">
+
+        <a href="#" class="logo">DenteBelo.</a>
+
+        <nav class="navbar container" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link>Início</a>
+            </li>
+            <li>
+              <a href="#service" class="navbar-link" data-nav-link>Serviços</a>
+            </li>
+            <li>
+              <a href="#about" class="navbar-link" data-nav-link> Sobre Nós</a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link" data-nav-link>Contato</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#" class="btn">Agendar Hórario</a>
+
+        <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+          <ion-icon name="menu-sharp" aria-hidden="true" class="menu-icon"></ion-icon>
+          <ion-icon name="close-sharp" aria-hidden="true" class="close-icon"></ion-icon>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- #HERO-->
+      <section class="section hero" id="home" style="background-image: url('./assets/images/hero-bg.png')"
+        aria-label="hero">
+        <div class="container">
+          <div class="hero-content">
+            <p class="section-subtitle">Bem vindo ao DenteBelo</p>
+            <h1 class="h1 hero-title">Nós cuidamos da sua saúde bucal</h1>
+            <p class="hero-text">
+              Com tecnologia de ponta e uma equipe especializada, estamos prontos para cuidar de você e do seu sorriso
+              com todo carinho que você merece.
+            </p>
+            <button type="submit" class="btn">Agendar Orçamento</button>
+          </div>
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner.png" width="587" height="839" alt="hero banner" class="w-100">
+          </figure>
+        </div>
+      </section>
+
+      <!-- #SERVICE-->
+      <section class="section service" id="service" aria-label="service">
+        <div class="container">
+          <p class="section-subtitle text-center">Nossos Serviços</p>
+          <h2 class="h2 section-title text-center">O que oferecemos</h2>
+
+          <ul class="service-list">
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-1.png" width="100" height="100" loading="lazy"
+                    alt="service icon" class="w-100">
+                </div>
+                <div>
+                  <h3 class="h3 card-title">Canal Radicular</h3>
+                  <p class="card-text">
+                    Tratamento para salvar dentes com infecção, restaurando saúde e função.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-3.png" width="100" height="100" loading="lazy"
+                    alt="service icon" class="w-100">
+                </div>
+                <div>
+                  <h3 class="h3 card-title">Alinhamento de Dentes</h3>
+                  <p class="card-text">
+                    Corrija a posição dos seus dentes com tratamentos eficientes e discretos.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-2.png" width="100" height="100" loading="lazy"
+                    alt="service icon" class="w-100">
+                </div>
+                <div>
+                  <h3 class="h3 card-title">Limpeza de Tártaros</h3>
+                  <p class="card-text">
+                    Elimine o tártaro e garanta dentes mais saudáveis e sorriso renovado.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="service-banner">
+              <figure>
+                <img src="./assets/images/service-banner.png" width="409" height="467" loading="lazy"
+                  alt="service banner" class="w-100">
+              </figure>
+            </li>
+
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-4.png" width="100" height="100" loading="lazy"
+                    alt="service icon" class="w-100">
+                </div>
+                <div>
+                  <h3 class="h3 card-title">Prótese Dentária</h3>
+                  <p class="card-text">
+                    Recupere a funcionalidade e estética do seu sorriso com próteses de alta qualidade.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-5.png" width="100" height="100" loading="lazy"
+                    alt="service icon" class="w-100">
+                </div>
+                <div>
+                  <h3 class="h3 card-title">Lentes de Resina</h3>
+                  <p class="card-text">
+                    Transforme seu sorriso com lentes de resina, proporcionando naturalidade e estética.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-6.png" width="100" height="100" loading="lazy"
+                    alt="service icon" class="w-100">
+                </div>
+                <div>
+                  <h3 class="h3 card-title">Restaurações</h3>
+                  <p class="card-text">
+                    Recupere a saúde e a estética dos seus dentes com restaurações duráveis e discretas.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--  #ABOUT-->
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="./assets/images/about-banner.png" width="470" height="538" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+
+          <div class="about-content">
+            <p class="section-subtitle">Quem somos</p>
+            <h2 class="h2 section-title">A saúde do seu sorriso é a nossa prioridade.</h2>
+            <p class="section-text section-text-1">
+              Na nossa clínica, oferecemos cuidados odontológicos de excelência com um atendimento acolhedor e
+              personalizado. Nossa equipe de profissionais está comprometida em proporcionar tratamentos eficientes e
+              seguros, visando sempre o bem-estar e a confiança de nossos pacientes. Aqui, seu sorriso é tratado com
+              todo carinho e dedicação que ele merece.
+            </p>
+            <a href="#" class="btn">Agendar Visita</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- #CTA-->
+      <section class="section cta" aria-label="cta" style="margin-top: 150px;">
+        <div class="container">
+          <figure class="cta-banner">
+            <img src="./assets/images/cta-banner.png" width="1056" height="1076" loading="lazy" alt="cta banner"
+              class="w-100">
+          </figure>
+          <div class="cta-content">
+            <p class="section-subtitle">Reserve Sua Avaliação</p>
+            <h2 class="h2 section-title">Planos especiais para família</h2>
+            <a href="#" class="btn">Agendar Agora</a>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- #DOCTOR-->
+      <section class="section doctor" aria-label="doctor">
+        <div class="container">
+          <p class="section-subtitle text-center">Nossos Profissionais</p>
+          <h2 class="h2 section-title text-center">Os Melhores Dentista </h2>
+
+          <ul class="has-scrollbar">
+            <li class="scrollbar-item">
+              <div class="doctor-card">
+                <div class="card-banner img-holder" style="--width: 460; --height: 500;">
+                  <img src="./assets/images/doctor-1.png" width="460" height="500" loading="lazy" alt="Howard Holmes"
+                    class="img-cover">
+                </div>
+                <h3 class="h3">
+                  <a href="#" class="card-title">Roberto Gomes</a>
+                </h3>
+                <p class="card-subtitle">Dentista Cirurgião</p>
+                <ul class="card-social-list">
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="doctor-card">
+                <div class="card-banner img-holder" style="--width: 460; --height: 500;">
+                  <img src="./assets/images/doctor-2.png" width="460" height="500" loading="lazy" alt="Ella Thompson"
+                    class="img-cover">
+                </div>
+                <h3 class="h3">
+                  <a href="#" class="card-title">Lara Santana</a>
+                </h3>
+                <p class="card-subtitle">Odontopediatria</p>
+                <ul class="card-social-list">
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="doctor-card">
+                <div class="card-banner img-holder" style="--width: 460; --height: 500;">
+                  <img src="./assets/images/doctor-3.png" width="460" height="500" loading="lazy" alt="Vincent Cooper"
+                    class="img-cover">
+                </div>
+                <h3 class="h3">
+                  <a href="#" class="card-title">Julio Cesar</a>
+                </h3>
+                <p class="card-subtitle">Dentista</p>
+                <ul class="card-social-list">
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="doctor-card">
+                <div class="card-banner img-holder" style="--width: 460; --height: 500;">
+                  <img src="./assets/images/doctor-4.png" width="460" height="500" loading="lazy" alt="Danielle Bryant"
+                    class="img-cover">
+                </div>
+                <h3 class="h3">
+                  <a href="#" class="card-title">Daniella Bardi</a>
+                </h3>
+                <p class="card-subtitle">Odontogeriatria</p>
+                <ul class="card-social-list">
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- #FOOTER-->
+  <footer class="footer">
+    <div class="footer-top section">
+      <div class="container">
+        <div class="footer-brand">
+          <a href="#" class="logo">DenteBelo.</a>
+          <p class="footer-text">
+            Aqui, unimos tecnologia, experiência e um atendimento acolhedor para oferecer o melhor para você. Seu novo
+            sorriso começa agora!.
+          </p>
+          <div class="schedule">
+            <div class="schedule-icon">
+              <ion-icon name="time-outline"></ion-icon>
+            </div>
+            <span class="span">
+              Segunda - Sexta:<br>
+              09:00am - 20:00
+            </span>
+          </div>
+        </div>
+
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Links</p>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">Início</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">Sobre Nós</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">Serviços</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">Equipe</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Serviços</p>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">Canal rRadicular</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">Alinhamento de Dentes</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">Limpeza de Tártaros</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">Prótese Dentária</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">Lentes de Resina</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">Restaurações</span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Contatos</p>
+          </li>
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <address class="item-text">
+              Rua da Flores, Sl 09 - Nova Friburgo - RJ
+            </address>
+          </li>
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+            <a href="tel:+917052101786" class="footer-link">(12) 3456 - 7890</a>
+          </li>
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <a href="mailto:" class="footer-link">contato@dentebelo.com.br</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; <script>document.write(new Date().getFullYear());</script>
+           DenteBelo<br>
+           Desenvolvido por <a href="https//sorayacop.com.br">SorayaCop</a>
+        </p>
+        <ul class="social-list">
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Icon FIXO -->
+  <a href="https://www.sorayacop.com.br/websites.html"><button class="fixed-icon">
+      <ion-icon name="arrow-undo-outline"></ion-icon>
+    </button></a>
+
+
+  <!-- #BACK TO TOP-->
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+  <!-- custom js link-->
+  <script src="./assets/js/script.js" defer></script>
+
+
+  <!-- ionicon link-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
